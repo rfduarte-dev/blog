@@ -225,4 +225,8 @@ button[disabled] {
 		margin: 0 auto;
 		max-width: 90%;
 	}
+
+	form {
+		width: 100%;
+	}
 }
