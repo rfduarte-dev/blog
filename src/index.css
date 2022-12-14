@@ -218,3 +218,11 @@ button[disabled] {
 	width: 0.9rem;
 	height: 0.9rem;
 }
+
+@media (max-width: 720px) {
+	.wrapper,
+	.container {
+		margin: 0 auto;
+		max-width: 90%;
+	}
+}
