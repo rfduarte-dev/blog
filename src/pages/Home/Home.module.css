@@ -51,9 +51,9 @@
 }
 
 .post_container {
-	width: 100%;
+	max-width: 1200px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 	gap: 4rem;
+	justify-content: center;
 }
