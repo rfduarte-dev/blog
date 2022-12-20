@@ -1,0 +1,16 @@
+.post_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 4rem;
+	margin-bottom: 1rem;
+}
+
+.post_actions {
+	display: flex;
+	gap: 1rem;
+}
+
+.post_actions * {
+	width: fit-content;
+}

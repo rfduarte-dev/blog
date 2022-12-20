@@ -10,11 +10,15 @@ import { UilSignout } from '@iconscout/react-unicons'
 import { NavLink } from 'react-router-dom'
 import { useAuthentication } from '../hooks/useAuthentication'
 import { useAuthValue } from '../context/AuthContext'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import { useFetchDocuments } from '../hooks/useFetchDocuments'
 
 const Navbar = () => {
-	const { user } = useAuthValue()
 	const { logout } = useAuthentication()
+	const { user } = useAuthValue()
+
+	const uid = user.uid
+	const { documents: posts } = useFetchDocuments('posts', null, uid)
 
 	return (
 		<nav className={styles.navbar}>
@@ -109,9 +113,11 @@ const Navbar = () => {
 						</div>
 						<div className={styles.user_info}>
 							<span>{user.displayName}</span>
-							<p>
-								ja fez <span>10</span> posts!
-							</p>
+							{posts && (
+								<p>
+									ja fez <span>{posts.length}</span> posts!
+								</p>
+							)}
 						</div>
 
 						<button onClick={logout}>

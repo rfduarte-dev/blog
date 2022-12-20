@@ -8,6 +8,8 @@ import { UilSearch } from '@iconscout/react-unicons'
 import { useNavigate, Link } from 'react-router-dom'
 import { useState } from 'react'
 import { useFetchDocuments } from '../../hooks/useFetchDocuments'
+
+// Component
 import PostDetail from '../../components/PostDetail'
 
 const Home = () => {
