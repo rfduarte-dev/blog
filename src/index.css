@@ -194,6 +194,7 @@ form button {
 		hsl(0, 100%, 40%)
 	);
 	outline: 3px solid hsl(0, 100%, 90%);
+	border: 2px solid #fff;
 }
 
 button[disabled] {
