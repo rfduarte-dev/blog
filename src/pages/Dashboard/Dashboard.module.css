@@ -1,9 +1,45 @@
+.dashboard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.dashboard h2 {
+	font-size: 2.2rem;
+	line-height: 2rem;
+}
+
+.dashboard > p {
+	color: #ccc;
+	margin-bottom: 2rem;
+}
+
+.post_header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+	border-bottom: 2px solid #ccc;
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+
 .post_container {
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	gap: 4rem;
 	margin-bottom: 1rem;
+	border-bottom: 2px solid #eee;
+	padding-bottom: 1rem;
+}
+
+.post_container button,
+.post_container a {
+	font-size: 0.75rem;
 }
 
 .post_actions {
@@ -13,4 +49,13 @@
 
 .post_actions * {
 	width: fit-content;
+}
+
+.noposts {
+	text-align: center;
+}
+
+.noposts p {
+	margin-bottom: 1.5rem;
+	color: var(--gray-color);
 }
